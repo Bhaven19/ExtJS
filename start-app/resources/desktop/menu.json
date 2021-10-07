@@ -3,6 +3,6 @@
   "children": [
     { "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
     { "text": "Personnel", "iconCls": "x-fa fa-table", "xtype": "personnelview","leaf": true },
-    { "text": "Basic Form", "iconCls": "x-fa fa-paper", "xtype": "basicformview", "leaf": true }
+    { "text": "Basic Form", "iconCls": "x-fa fa-align-justify", "xtype": "basicformview", "leaf": true }
   ]
 }
