@@ -4,6 +4,7 @@
     { "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
     { "text": "Personnel", "iconCls": "x-fa fa-table", "xtype": "personnelview","leaf": true },
     { "text": "Basic Form", "iconCls": "x-fa fa-align-left", "xtype": "basicformview", "leaf": true },
-    { "text": "Basic Grid", "iconCls": "x-fa fa-th", "xtype": "basicgridview", "leaf": true }
+    { "text": "Basic Grid", "iconCls": "x-fa fa-th", "xtype": "basicgridview", "leaf": true },
+    { "text": "KN Test Page", "iconCls": "x-fa fa-cog", "xtype": "kntestview", "leaf": true }
   ]
 }

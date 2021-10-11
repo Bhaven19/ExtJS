@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sencha-compass">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/node_modules/@sencha/cmd/dist/extensions/sencha-compass/sencha-compass.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sencha-service">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/node_modules/@sencha/cmd/dist/extensions/sencha-service/sencha-service.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
