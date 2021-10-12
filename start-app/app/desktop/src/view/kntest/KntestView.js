@@ -1,8 +1,8 @@
 Ext.define('StartApp.view.kntest.KntestView',{
 	xtype: 'kntestview',
 	cls: 'kntestview',
-	controller: 'kntestviewcontroller',
-    extend: 'Ext.panel.Panel',
+    controller: {type: 'knform-register'},
+    extend: 'Ext.form.Panel',
 
 	requires: [
 	    'Ext.field.RadioGroup',
@@ -40,7 +40,7 @@ Ext.define('StartApp.view.kntest.KntestView',{
         required: 'true',
         placeholder: 'Select an airport...',
         store: {
-            type: 'airports' //Page doesn't show when value entered
+            type: 'airports'
         }
     }],
 
