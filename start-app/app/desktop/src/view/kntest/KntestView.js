@@ -1,12 +1,13 @@
 Ext.define('StartApp.view.kntest.KntestView',{
 	xtype: 'kntestview',
 	cls: 'kntestview',
-	controller: {type: 'kntestviewcontroller'},
+	controller: 'kntestviewcontroller',
     extend: 'Ext.panel.Panel',
 
-	requires: ['Ext.field.RadioGroup',
-               'StartApp.model.AirportModel',
-               'StartApp.store.AirportsStore'],
+	requires: [
+	    'Ext.field.RadioGroup',
+	    'StartApp.model.Airport',
+	    'StartApp.store.Airports'],
 
     title:'KN UI Elements',
 
@@ -23,23 +24,29 @@ Ext.define('StartApp.view.kntest.KntestView',{
         name: 'rb-auto',
         required: 'true',
         items: [
-            { label: 'Yes', name: 'rb_Yes'},
-            { label: 'No', name: 'rb_Yes'},
-            { label: 'Null', name: 'rb_Yes'}
+            { label: 'Yes', name: 'rb_TripleGroup'},
+            { label: 'No', name: 'rb_TripleGroup'},
+            { label: 'Null', name: 'rb_TripleGroup'}
         ]
     }, {
         xtype: 'combobox',
-        label: 'Autocomplete',
-        name: 'Airport',
-        valueField: 'abbr',
+        label: 'Autocomplete: Choose an Airport',
+        name: 'airportName',
+        valueField: 'airportName',
         displayField: 'airportName',
         forceSelection: true,
         queryMode: 'local',
         clearable: true,
-        placeholder: 'Select an Airport',
+        required: 'true',
+        placeholder: 'Select an airport...',
         store: {
-            type: 'airports'
+            type: 'airports' //Page doesn't show when value entered
         }
+    }],
+
+    buttons: [{
+        text: 'Register',
+        handler: 'onRegister'
     }]
 
 });
